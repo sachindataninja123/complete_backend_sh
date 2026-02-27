@@ -7,6 +7,7 @@ const app = express();
 // Middleware to read JSON
 app.use(express.json());
 
+
 const notes = [];
 
 // post '/notes' api
