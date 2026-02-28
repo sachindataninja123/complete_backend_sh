@@ -21,25 +21,36 @@ app.post("/notes", async (req, res) => {
   });
 });
 
-app.get("/seeNotes" , async (req, res) => {
-   const notes =  await noteModel.find(); // []
+app.get("/seeNotes", async (req, res) => {
+  const notes = await noteModel.find(); // []
 
-   res.status(200).json({
-    message : "Notes fetched Successfully",
-    notes : notes
-   })
-})
+  res.status(200).json({
+    message: "Notes fetched Successfully",
+    notes: notes,
+  });
+});
 
-app.delete("/notes/:id" , async(req , res) => {
-    const id = req.params.id
+app.delete("/notes/:id", async (req, res) => {
+  const id = req.params.id;
 
-    await noteModel.findOneAndDelete({
-        _id : id
-    })
+  await noteModel.findOneAndDelete({
+    _id: id,
+  });
 
-    res.status(200).json({
-        message:"Note deleted Successfully"
-    })
-})
+  res.status(200).json({
+    message: "Note deleted Successfully",
+  });
+});
+
+app.patch("/notes/:id", async (req, res) => {
+  const id = req.params.id;
+  const description = req.body.description;
+
+  await noteModel.findOneAndUpdate({ _id: id }, { description: description });
+
+  res.status(200).json({
+    message : "Note Updated Successfully"
+  })
+});
 
 module.exports = app;
