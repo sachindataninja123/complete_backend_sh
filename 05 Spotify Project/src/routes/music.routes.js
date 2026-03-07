@@ -4,6 +4,7 @@ const {
   createAlbum,
   getAllMusics,
   getAllAlbums,
+  getAlbumById,
 } = require("../controllers/music.controllers");
 const multer = require("multer");
 
@@ -18,7 +19,8 @@ router.post("/upload", upload.single("music"), createMusic);
 router.post("/album", createAlbum);
 
 router.get("/" , getAllMusics)
-
 router.get('/albums' , getAllAlbums)
+
+router.get("/albums/:albumId" ,getAlbumById )
 
 module.exports = router;
