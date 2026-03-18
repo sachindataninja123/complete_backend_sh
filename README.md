@@ -15,3 +15,57 @@ complete_backend_sh/
 │── README.md             # Project documentation
 
 
+---
+
+## 📘 What I Learned
+
+### 🔹 01 Basic
+- Introduction to backend development  
+- Node.js fundamentals  
+- Express.js setup  
+- Routing and middleware basics  
+
+### 🔹 02 DB Concepts
+- Database fundamentals  
+- CRUD operations  
+- MongoDB & Mongoose integration  
+- Schema and model design  
+
+### 🔹 03 Mini Insta Project
+- Building a mini social media backend  
+- User posts and interactions  
+- API structure and routing  
+- Data relationships  
+
+### 🔹 04 Authentication
+- User registration & login  
+- Password hashing (bcrypt)  
+- Token-based authentication (JWT)  
+- Cookies & session handling  
+
+### 🔹 05 Spotify Project
+- Real-world backend project  
+- API structuring  
+- Handling complex data  
+- Scalable backend practices  
+
+### 🔹 06 Jest Package
+- Unit testing basics  
+- Writing test cases  
+- Testing APIs and functions  
+- Improving code reliability  
+
+---
+
+## 🛠️ Tech Stack
+
+- Node.js  
+- Express.js  
+- MongoDB  
+- Mongoose  
+- JWT (JSON Web Tokens)  
+- Bcrypt  
+- Jest  
+
+---
+
